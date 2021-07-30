@@ -37,3 +37,154 @@ Mostrar el valor de la variable por la consola.
 Ejercicio 9
 Mostrar por la consola los siguientes valores false, 'Hola', 0 y 'Minions' usando
 la misma variable.
+Alberto@LAPTOP-NA812GF9 MINGW64 ~
+$ pwd
+/c/Users/Alberto
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~
+$ cd Desktop
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop
+$ cd Javascript/
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ ls
+index.html  script.js
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ ls -la
+total 40
+drwxr-xr-x 1 Alberto 197121   0 Jul 30 17:40 ./
+drwxr-xr-x 1 Alberto 197121   0 Jul 30 10:16 ../
+-rw-r--r-- 1 Alberto 197121 833 Jul 30 18:21 index.html
+-rw-r--r-- 1 Alberto 197121 844 Jul 30 18:19 script.js
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ ls -lh
+total 8.0K
+-rw-r--r-- 1 Alberto 197121 833 Jul 30 18:21 index.html
+-rw-r--r-- 1 Alberto 197121 844 Jul 30 18:19 script.js
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ mkdir cursojs
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ ls -lh
+total 8.0K
+drwxr-xr-x 1 Alberto 197121   0 Jul 30 18:28 cursojs/
+-rw-r--r-- 1 Alberto 197121 833 Jul 30 18:21 index.html
+-rw-r--r-- 1 Alberto 197121 844 Jul 30 18:19 script.js
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ ls
+cursojs/  index.html  script.js
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript
+$ cd cursojs/
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs
+$ git init
+Initialized empty Git repository in C:/Users/Alberto/Desktop/Javascript/cursojs/.git/
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ touch tareaEjercicio0.txt
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tareaEjercicio0.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ ls
+tareaEjercicio0.txt
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git add tareaEjercicio0.txt
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$  git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   tareaEjercicio0.txt
+
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$  git commit -m "voy a subir los ejercicios de JS"
+[master (root-commit) b6de954] voy a subir los ejercicios de JS
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tareaEjercicio0.txt
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git log
+commit b6de954698d0d97522e497cbb2d48c82dfe93f65 (HEAD -> master)
+Author: albertobardalez <albertbardalez@gmail.com>
+Date:   Fri Jul 30 18:37:02 2021 -0300
+
+    voy a subir los ejercicios de JS
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tareaEjercicio0.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git add tareaEjercicio0.txt
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tareaEjercicio0.txt
+
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git commit -m "cargue los enunciados del ejercicio 0"
+[master 4a5393b] cargue los enunciados del ejercicio 0
+ 1 file changed, 39 insertions(+)
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git log
+commit 4a5393be64dc8e35c862282f52f92eb96468a35c (HEAD -> master)
+Author: albertobardalez <albertbardalez@gmail.com>
+Date:   Fri Jul 30 18:43:07 2021 -0300
+
+    cargue los enunciados del ejercicio 0
+
+commit b6de954698d0d97522e497cbb2d48c82dfe93f65
+Author: albertobardalez <albertbardalez@gmail.com>
+Date:   Fri Jul 30 18:37:02 2021 -0300
+
+    voy a subir los ejercicios de JS
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Alberto@LAPTOP-NA812GF9 MINGW64 ~/Desktop/Javascript/cursojs (master)
+$ git add tareaEjercicio0.txt
