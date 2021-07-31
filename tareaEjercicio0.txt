@@ -37,6 +37,8 @@ Mostrar el valor de la variable por la consola.
 Ejercicio 9
 Mostrar por la consola los siguientes valores false, 'Hola', 0 y 'Minions' usando
 la misma variable.
+
+// Primeros comandos para poder realizar el proceso de carga al repositorio local
 Alberto@LAPTOP-NA812GF9 MINGW64 ~
 $ pwd
 /c/Users/Alberto
